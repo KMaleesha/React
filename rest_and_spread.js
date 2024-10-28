@@ -73,3 +73,14 @@ const [first, second, ...rest_argument] = myArray;
 console.log(first);
 console.log(second);
 console.log(rest_argument);
+
+const myObject = {
+    one:10,
+    two:20,
+    three:30,
+    four:40
+};
+const {one:x,two,...res_obj} = myObject;
+console.log(x);
+console.log(two);
+console.log(res_obj);
